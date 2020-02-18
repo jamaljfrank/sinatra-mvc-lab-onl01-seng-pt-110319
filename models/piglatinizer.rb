@@ -14,6 +14,8 @@ class PigLatinizer
       word[1..-1] + word[0] + "ay"
     elsif word[2].start_with?(@vowels)
       word[2..-1] + word[0..1] + "ay"
+    else
+      
     end
   end
 
