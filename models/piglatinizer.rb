@@ -7,7 +7,7 @@ class PigLatinizer
   end
 
   def piglatinize_word(word)
-    
+    @vowels = 
     if word[0].downcase.start_with?(/[aeiou]/)
        "#{word}way"
     else
