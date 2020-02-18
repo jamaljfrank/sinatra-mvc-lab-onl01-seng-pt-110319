@@ -12,7 +12,7 @@ class PigLatinizer
        "#{word}way"
     elsif word[1].start_with?(@vowels) 
       word[1..-1] + word[0] + "ay"
-    elsif word
+    elsif word[2].start_with?(@vowels)
       word[2..-1] + word[0..1] + "ay"
     end
   end
