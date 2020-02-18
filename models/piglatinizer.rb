@@ -7,7 +7,7 @@ class PigLatinizer
   end
 
   def piglatinize_word(word)
-    first_letter = word[0].downcase
+    first_letter = 
       if ["a", "e", "i", "o", "u"].include?(first_letter)
         "#{word}way"
       else
