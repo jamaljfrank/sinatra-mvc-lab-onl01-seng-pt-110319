@@ -13,7 +13,7 @@ class PigLatinizer
     elsif word[1] == @vowels
       
     else
-      word[1..-1] + word[0] + "ay"
+      
       word[2..-1] + word[0..1] + "ay"
     end
   end
