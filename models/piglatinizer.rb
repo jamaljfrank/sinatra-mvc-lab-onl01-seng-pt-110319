@@ -18,5 +18,4 @@ class PigLatinizer
       word[3..-1] + word[0..2] + "ay"
     end
   end
-
 end 
