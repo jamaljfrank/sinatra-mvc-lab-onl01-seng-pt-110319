@@ -11,16 +11,7 @@ class PigLatinizer
       if word[0].downcase.start_with?(/[aeiou]/)
         "#{word}way"
       else
-        consonants = []
-        consonants << word[0]
-      if ["a", "e", "i", "o", "u"].include?(word[1]) == false
-        consonants << word[1]
-                    if ["a", "e", "i", "o", "u"].include?(word[2]) == false
-                        consonants << word[2]
-                    end
-                end
-            "#{word[consonants.length..-1] + consonants.join + "ay"}"
-            end
+        word[1..-1] + word[0] + "ay"
     end
 
 end 
